@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body id="page-top">
+    {% include navbar.html %}
+    <div class="wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 hidden-md-down">
+            <div class="card card-block" id="sidebar-menu">
+              <ul class="list-unstyled main-menu nav flex-column">
+                <li id="overview-menu">
+                  <a href="{{site.baseurl}}/backend/">
+                    Home
+                  </a>
+                </li>
+                {% for docs in site.backend %}{% unless docs.short == "index" %}
+                  <li id="{{docs.short}}-menu">
+                    <a href="{{site.baseurl}}{{docs.url}}">
+                      {{docs.title}}
+                    </a>
+                  </li>
+                {% endunless %}{% endfor %}
+                <hr class="sidebar-divider" />
+                <li>
+                  <a href="#page-top">Back to top</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-9 col-md-12" id="static-content">
+            <h1 id="{{page.short}}" class="page-id">{{page.title}}</h1>
+            {{ content }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+    <script src="{{site.baseurl}}/js/sidebar.js"></script>
+  </body>
+
+</html>
