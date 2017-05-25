@@ -17,14 +17,19 @@
                     Home
                   </a>
                 </li>
-                {% for docs in site.frontend %}{% unless docs.short == "index" %}
+                <li id="overview-menu">
+                  <a href="{{site.baseurl}}/frontend/setup.html">
+                    Setup
+                  </a>
+                </li>
+                {% for docs in site.frontend %}{% unless docs.short == "index" or docs.short == "setup" %}
                   <li id="{{docs.short}}-menu">
                     <a href="{{site.baseurl}}{{docs.url}}">
                       {{docs.title}}
                     </a>
                   </li>
                 {% endunless %}{% endfor %}
-                <hr class="sidebar-divider" />
+                <div class="sidebar-divider"></div>
                 <li>
                   <a href="#page-top">Back to top</a>
                 </li>
