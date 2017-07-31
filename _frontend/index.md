@@ -16,3 +16,5 @@ The website is one of the most awesome parts of WAC: we show the user just how a
 You can find a table of contents of this entire set of documentation on the sidebar, with some dazzling sub-headers. We'll walk you through how to setup up your development environment, learn the basic elements of our system, and understand the nitty gritty of our tech stack.
 
 ## A Few Notes
+
+First, you'll need the right tools for the job. Head over to our [tools]({{site.baseurl}}/tools/) page to make sure you have everything we need, and make sure you go over [setup]({{site.baseurl}}/frontend/setup.html/) before you start hacking.

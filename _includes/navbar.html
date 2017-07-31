@@ -1,4 +1,4 @@
-<nav class="navbar navbar-toggleable-md navbar-light fixed-top">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
   <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -9,8 +9,11 @@
       <li class="nav-item{% if page.layout == 'frontend' %} active{% endif %}">
         <a class="nav-link" href="{{ site.baseurl }}/frontend/">Frontend</a>
       </li>
-      <li class="nav-item{% if page.category == 'backend' %} active{% endif %}">
+      <li class="nav-item{% if page.layout == 'backend' %} active{% endif %}">
         <a class="nav-link" href="{{ site.baseurl }}/backend/">Backend</a>
+      </li>
+      <li class="nav-item{% if page.category == 'tools' %} active{% endif %}">
+        <a class="nav-link" href="{{ site.baseurl }}/tools/">Tools</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="https://matthewwang.me/paleta/wac/overview/">Style Guide</a>

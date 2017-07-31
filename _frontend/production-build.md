@@ -26,7 +26,7 @@ Similar to "traditional" programming, compiling takes all of our precompiled fil
 
 The compile step is the least distinct out of the three: most of it is executed in `jekyll build`, but it's good to know the distinction. In addition, we might add more compiling steps for our Javascript if it becomes needed.
 
-## Jekyll
+## Building
 
 The final step in the build process is `jekyll build`. Basically, this'll just compile all the Jekyll template files into viewable, usable HTML & CSS. You can learn more about the Jekyll build process in the section on Jekyll.
 
@@ -36,8 +36,8 @@ You can run this either with `bundle exec jekyll build` or using `./start.sh`.
 
 ### Serving
 
-During development, it might not be practical to use `bundle exec jekyll build`. You can use `bundle exec jekyll serve` to have a live auto-update build, which updates your Jekyll site as you make changes. 
+During development, it might not be practical to use `bundle exec jekyll build`. You can use `bundle exec jekyll serve` to have a live auto-update build, which updates your Jekyll site as you make changes.
 
 ## Cleanup
 
-If you want to clean up everything created in `setup.sh`, you can use `unsetup.sh` to remove everything. THis is usefull when you're troubleshooting some problems that you might encounter during development.
+If you want to clean up everything created in `setup.sh`, you can use `unsetup.sh` to remove everything. This is usefull when you're troubleshooting some problems that you might encounter during development.
