@@ -1,3 +1,7 @@
-_site/
+site
 .sass-cache/
 .jekyll-metadata
+.vscode/settings.json
+.DS_Store
+.trash/
+
