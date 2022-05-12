@@ -3,8 +3,7 @@ site_name: World Affairs Conference Documentation
 theme:
     name: 'material'
     favicon: 'img/favicon.ico'
-    icon:
-      logo: material/globe-model
+    logo: 'img/favicon.png'
     palette:
 
     # Light mode
