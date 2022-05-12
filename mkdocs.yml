@@ -5,7 +5,6 @@ theme:
     favicon: 'img/favicon.ico'
     logo: 'img/favicon.png'
     palette:
-
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -45,9 +44,7 @@ markdown_extensions:
   - toc:
       permalink: true
 
-extra_css:
-  - styles/style.css
 
 plugins:
   - search
-  - roamlinks 
+  - roamlinks
